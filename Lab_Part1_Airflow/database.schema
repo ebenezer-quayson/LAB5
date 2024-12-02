@@ -1,0 +1,9 @@
+CREATE DATABASE airflow;
+CREATE TABLE IF NOT EXISTS daily_weather (
+    sid SERIAL PRIMARY KEY,
+    city VARCHAR(100),
+    temperature_c FLOAT,
+    temperature_f FLOAT,
+    wind_speed FLOAT,
+    humidity INTEGER,
+    timestamp TIMESTAMP WITH TIME ZONE);  

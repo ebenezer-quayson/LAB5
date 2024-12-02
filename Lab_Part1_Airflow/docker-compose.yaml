@@ -1,0 +1,14 @@
+services:
+  airflow-webserver:
+    image: "apache/airflow:2.7.2"
+    
+    environment:
+      AIRFLOW__SMTP__SMTP_HOST: "smtp.gmail.com"
+      AIRFLOW__SMTP__SMTP_PORT: "587"
+      AIRFLOW__SMTP__SMTP_STARTTLS: "True"
+      AIRFLOW__SMTP__SMTP_SSL: "False"
+      AIRFLOW__SMTP__SMTP_USER: "quaysonebenezerawudzi@gmail.com"
+      AIRFLOW__SMTP__SMTP_PASSWORD: "enfp rxzv opzz etcz"
+      AIRFLOW__SMTP__SMTP_MAIL_FROM: "quaysonebenezerawudzi@gmail.com"
+      AIRFLOW__SMTP__SMTP_TIMEOUT: "30"
+      AIRFLOW__SMTP__SMTP_RETRY_LIMIT: "5"
